@@ -1,7 +1,7 @@
 # game-tracker
 
-Library with Fortnite, CSGO, Overwatch and Apex Legends stats \
-`79` lines of code, `1` dependency
+Fortnite, CSGO, Apex Legends, Overwatch, Hyper Scape tracker. \
+`197` lines of code, `1` dependency
 
 ## Installation
 
@@ -14,8 +14,8 @@ $ npm install game-tracker
 ## Usage
 
 ```js
-const GameStats = require('game-tracker');
-const stats = new GameStats('your_key'); // Tracker Network key
+const GameTracker = require('game-tracker');
+const stats = new GameTracker('your_key'); // Tracker Network key
 
 async function getStats() {
     await stats.function('your_platform', 'your_nickname'); // returns JSON
@@ -25,8 +25,8 @@ async function getStats() {
 *Example:*
 
 ```js
-const GameStats = require('game-tracker');
-const stats = new GameStats('your_key');
+const GameTracker = require('game-tracker');
+const stats = new GameTracker('your_key');
 
 const prefix = '!';
 
@@ -62,7 +62,18 @@ segments - `map` + `weapon`
 function - `apexLegends(platform, nickname)` \
 platforms - `origin` + `xbl` + `psn`
 
+##### Apex Legends Segments 
+
+function - `apexLegendsSegments(platform, nickname, segment)` \
+platforms - `origin` + `xbl` + `psn` \
+segment - `legend`
+
 ##### Overwatch
 
 function - `overwatch(platform, nickname)` \
 platforms - `battlenet` + `xbl` + `psn`
+
+##### Hyper Scape
+
+function - `hyperScape(platform, nickname)` \
+platforms - `uplay` + `xbl` + `psn`
