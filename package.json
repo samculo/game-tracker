@@ -1,6 +1,6 @@
 {
   "name": "game-tracker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,11 +12,13 @@
   },
   "keywords": [
     "game",
+    "games",
     "tracker",
-    "fortnite",
-    "csgo",
-    "apex legends",
-    "overwatch"
+    "stats",
+    "statistics",
+    "game tracker",
+    "game stats",
+    "game statistics"
   ],
   "author": "samculo",
   "license": "ISC",
